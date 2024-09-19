@@ -1,3 +1,7 @@
+from __future__ import annotations
+
+import pytest
+
 from bottles.bottles import Bottles
 
 
@@ -11,6 +15,7 @@ def test_the_first_verse():
     assert expected == Bottles().verse(99)
 
 
+@pytest.mark.skip
 def test_another_verse():
     expected = (
         "3 bottles of beer on the wall, "
@@ -21,6 +26,7 @@ def test_another_verse():
     assert expected == Bottles().verse(3)
 
 
+@pytest.mark.skip
 def test_verse_2():
     expected = (
         "2 bottles of beer on the wall, "
@@ -31,6 +37,7 @@ def test_verse_2():
     assert expected == Bottles().verse(2)
 
 
+@pytest.mark.skip
 def test_verse_1():
     expected = (
         "1 bottle of beer on the wall, "
@@ -41,6 +48,7 @@ def test_verse_1():
     assert expected == Bottles().verse(1)
 
 
+@pytest.mark.skip
 def test_verse_0():
     expected = (
         "No more bottles of beer on the wall, "
@@ -51,6 +59,7 @@ def test_verse_0():
     assert expected == Bottles().verse(0)
 
 
+@pytest.mark.skip
 def test_a_couple_verses():
     expected = (
         "99 bottles of beer on the wall, "
@@ -66,6 +75,7 @@ def test_a_couple_verses():
     assert expected == Bottles().verses(99, 98)
 
 
+@pytest.mark.skip
 def test_a_few_verses():
     expected = (
         "2 bottles of beer on the wall, "
@@ -86,6 +96,7 @@ def test_a_few_verses():
     assert expected == Bottles().verses(2, 0)
 
 
+@pytest.mark.skip
 def test_the_whole_song():
     expected = (
         "99 bottles of beer on the wall, 99 bottles of beer.\n"

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bottles"
+version = "0.1"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "flake8",
+  "pip-tools",
+  "mypy",
+  "pre-commit",
+  "pytest"
+]

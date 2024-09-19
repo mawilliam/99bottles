@@ -1,3 +1,6 @@
+from __future__ import annotations
+
+
 class Bottles:
     def __init__(self):
         pass
